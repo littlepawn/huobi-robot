@@ -5,7 +5,7 @@ use Telegram\Bot\Api;
 class Telegram{
     public function getInfo(){
         try {
-            $telegram = new Api('597007058:AAHiQXbCDYPtfuX4qyXlxPu9UVo0eghpSKc');
+            $telegram = new Api('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');    //注册telegram机器人后获得
             $response = $telegram->getMe();
             $botId = $response->getId();
             $firstName = $response->getFirstName();
@@ -18,7 +18,7 @@ class Telegram{
 
     public function sendMessage($text='hello',$flag=false){
         try {
-            $telegram = new Api('597007058:AAHiQXbCDYPtfuX4qyXlxPu9UVo0eghpSKc');
+            $telegram = new Api('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');      //注册telegram机器人后获得
             $params=[
                 'chat_id'=>'492648647',
                 'text'=>$text,
@@ -36,21 +36,6 @@ class Telegram{
                 ];
                 $telegram->sendMessage($params);
             }
-            return $response;
-        }catch (Exception $e){
-            echo $e->getMessage();
-            return false;
-        }
-    }
-
-    public function sendOrderMessage($text='hello',$chatId){
-        try {
-            $telegram = new Api('597007058:AAHiQXbCDYPtfuX4qyXlxPu9UVo0eghpSKc');
-            $params=[
-                'chat_id'=>$chatId,
-                'text'=>$text,
-            ];
-            $response = $telegram->sendMessage($params);
             return $response;
         }catch (Exception $e){
             echo $e->getMessage();
