@@ -1,8 +1,8 @@
 <?php
 // 定义参数
 define('ACCOUNT_ID', '37129331'); // 你的账户ID 
-define('ACCESS_KEY','282c296c-d80ed2f5-eecc1e34-216a2'); // 你的ACCESS_KEY
-define('SECRET_KEY', '2b1041f3-4604a918-da972749-b9898'); // 你的SECRET_KEY
+define('ACCESS_KEY','xxxxxxxxxxxxxxxxxxxxxxxxxx'); // 你的ACCESS_KEY
+define('SECRET_KEY', 'xxxxxxxxxxxxxxxxxxxxxxxxx'); // 你的SECRET_KEY
 include "lib.php";
 include "telegram.php";
 
